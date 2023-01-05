@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>文本阴影</title>
+	<style type="text/css">
+		.box{
+			width: 683px;
+			height: 120px;
+			background: #eceaeb;
+			box-shadow: 4px 7px 7px #bfbfbf,-4px 7px 7px #bfbfbf;
+			border-radius: 15px;
+		}
+		input{
+			outline: none;
+		}
+		input[type=search]{
+			margin: 16px;
+			width: 483px;
+			height: 86px;
+			font-size: 25px;
+			border: 1px solid #cccccc;
+			border-radius: 6px;
+			text-indent: 10px;
+		}
+		input[type=button]{
+			width: 100px;
+			height: 86px;
+			border-radius: 5px;
+			background: blue;
+			box-shadow:1px 1px #5ca33b4;
+			color: white;
+			font-size: 25px;
+		}
+		.d1{
+			width: 150px;
+			height: 150px;
+			display: flex;
+			
+			border:1px solid red ;
+		}
+		.d1 p{
+			width: 50px;
+			height: 50px;
+			border: 1px solid purple;
+			background: red;
+			margin: auto;
+		}
+		.flex{
+			width: 600px;
+			height: 100px;
+			border: 3px solid purple;
+			display: flex;
+		}
+		.flex div{
+			width: 100px;
+			height: 100px;
+			border: 1px solid red;
+			
+		}
+		.f2{
+			flex: 1;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="box">
+		<input type="search" name="" placeholder="Search for CSS3,HTML5,Jquery...">
+		<input type="button" value="GO">
+	</div>
+	<div class="d1">
+		<p>弹性盒</p>
+	</div>
+	<div class="flex">
+		<div class="f1">
+			f1
+		</div>
+		<div class="f2">
+			f2
+		</div>
+		<div class="f3">
+			f3
+		</div>
+	</div>
+</body>
+</html>

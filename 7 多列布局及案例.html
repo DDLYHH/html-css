@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>多列布局</title>
+	<style type="text/css">
+		.d1{
+			background: yellowgreen;
+			height: 300px;
+
+			/*显示的列数*/
+			column-count: 3;
+
+			/*调整列间距*/
+			column-gap: 20px;
+
+			/*列边框*/
+			column-rule: 2px solid red;
+
+			/*列高度统一*/
+			column-fill: balance; 
+
+			/*调整列宽,与列数冲突*/
+			/*column-width: 500px;*/
+		}
+		.d1>h1{
+			/*all：横跨所有的列*/
+			column-span: all;
+			text-align: center;
+		}
+
+
+		.box{
+			column-count: 3;
+			background: url(sc/动图.png);
+		
+		}
+		.box div{
+			border: 3px solid green;
+			margin-bottom: 10px;
+			/*禁止盒子内部折行*/
+			break-inside: avoid;
+		}
+		.box img{
+			width: 100%;
+		}
+		.box p{
+			color: white;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<div class="d1">
+		<h1>赵钱孙李</h1>
+		Lorem input dolor,sit amet consectetur adipidiciong elit.Molestias error dolores voluptatem possimus ipsa exercitationem,illo recusandae doloremque similique eum modi.Mollitia totam perspiciatis,quisquam unde ducimus quos retione nihil!Lorem input dolor,sit amet consectetur adipidiciong elit.Molestias error dolores voluptatem possimus ipsa exercitationem,illo recusandae doloremque similique eum modi.Mollitia totam perspiciatis,quisquam unde ducimus quos retione nihil!
+
+		Lorem input dolor,sit amet consectetur adipidiciong elit.Molestias error dolores voluptatem possimus ipsa exercitationem,illo recusandae doloremque similique eum modi.Mollitia totam perspiciatis,quisquam unde ducimus quos retione nihil!
+
+		Lorem input dolor,sit amet consectetur adipidiciong elit.Molestias error dolores voluptatem possimus ipsa exercitationem,illo recusandae doloremque similique eum modi.Mollitia totam perspiciatis,quisquam unde ducimus quos retione nihil!
+	</div>
+
+	<div class="box">
+		<div>
+			<img src="sc/1.jpg">
+			<p>迪丽热巴</p>
+		</div>
+		<div>
+			<img src="sc/2.jpg">
+			<p>迪丽热巴</p>
+		</div>
+		<div>
+			<img src="sc/3.jpg">
+			<p>迪丽热巴</p>
+		</div>
+		<div>
+			<img src="sc/4.jpg">
+			<p>迪丽热巴</p>
+		</div>
+		<div>
+			<img src="sc/5.jpg">
+			<p>迪丽热巴</p>
+		</div>
+		<div>
+			<img src="sc/6.jpg">
+			<p>迪丽热巴</p>
+		</div>
+		<div>
+			<img src="sc/7.jpg">
+			<p>迪丽热巴</p>
+		</div>
+		<div>
+			<img src="sc/8.jpg">
+			<p>迪丽热巴</p>
+		</div>
+		<div>
+			<img src="sc/9.jpg">
+			<p>迪丽热巴</p>
+		</div>
+	</div>
+</body>
+</html>

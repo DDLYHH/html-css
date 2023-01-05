@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title></title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		ul{
+			list-style: none;
+		}
+		html{
+			font-size: 1rem;
+		}
+		body{
+			display: flex;
+			flex-direction: column;
+		}
+		html,body{
+			height: 100%;
+		}
+		header{
+			height: 2.2rem;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background:#0cc400;
+		}
+		header div{
+			width: 3rem;
+			height: 1.25rem;
+			line-height: 1.25rem;
+			text-align: center;
+			font-size: .6rem;
+		}
+		header div:nth-child(1){
+			border-radius: .6rem 0 0 .6rem;
+			background: #63d985;
+			color: white;
+		}
+		header div:nth-child(2){
+			border-radius: 0 .6rem .6rem 0;
+			background: #3dd066;
+		}
+		section{
+			flex: 1;
+			overflow: auto;
+		}
+		footer{
+			height: 2.2rem;
+			background: gray;
+		}
+		.top{
+			display: flex;
+			position: sticky;
+			top: 0;
+			background: white;
+		}
+		.top div{
+			height: 1.75rem;
+			height: 1.75rem;
+			line-height: 1.75rem;
+			flex: 1;
+			text-align: center;
+			color: #8c8c8c;
+			font-size: .7rem;
+			border-bottom: .05rem solid #d9d9d9;
+					}
+		.top div:hover{
+			border-bottom: .1rem solid #08c63e;
+			color: #14bf4d;
+		}
+		.list{
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
+		.list div{
+			width: 49%;
+			margin-top: .2rem;
+			border: .05rem solid gray;
+		}
+		.list div img{
+			width: 100%;
+		}
+		.list div p{
+			height: 1.5rem;
+			line-height: 1.5rem;
+			text-indent: .5rem;
+		}
+	</style>
+	<script>
+		document.documentElement.style.fontSize=document.documentElement.
+		clientWidth/320 * 20 +'px'
+
+	</script>
+</head>
+<body>
+	<header>
+		<div >热点</div>
+		<div>关注</div>
+	</header>
+	<section>
+		<div class="top">
+			<div>足球现场</div>
+			<div>足球生活</div>
+			<div>足球美女</div>
+		</div>
+		<div class="list">
+			<div>
+				<img src="sc/小丸子.png">
+				<p>大家好大家好！</p>
+			</div>
+			<div>
+				<img src="sc/小丸子.png">
+				<p>大家好大家好！</p>
+			</div>
+			<div>
+				<img src="sc/小丸子.png">
+				<p>大家好大家好！</p>
+			</div>
+			<div>
+				<img src="sc/小丸子.png">
+				<p>大家好大家好！</p>
+			</div>
+			<div>
+				<img src="sc/小丸子.png">
+				<p>大家好大家好！</p>
+			</div>
+		</div>
+	</section>
+	<footer></footer>
+</html>

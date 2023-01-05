@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>2D平移</title>
+	<style type="text/css">
+		.d1{
+			width: 100px;
+			height: 100px;
+			background: yellow;
+			transition: all 2s;
+					}
+		.d1:hover{
+			/*transform: translateX(100px) translateY(100px);*/
+			transform: translate(100px,100px);
+		}
+		.d2{
+			width: 260px;
+			height: 400px;
+			border:5px solid red;
+			transition: all 2s;
+			margin: 10px auto;
+			transform-origin: top;
+		}
+		.d2:hover{
+			transform: scale(0.2);
+		}
+		.d2 img{
+			height: 100%;
+			width: 100%;
+		}
+		.d3{
+			width: 100px;
+			height: 100px;
+			background: red;
+			transition: all 2s;
+		}
+		.d3:hover{
+			transform: rotate(45deg);
+		}
+		.d4{
+			width: 100px;
+			height: 100px;
+			background: green;
+			transform: skew(30deg,30deg);
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<div class="d1">平移
+	</div>
+	<div class="d2">
+		<img src="sc/8.jpg">
+	</div>
+	<div class="d3">
+		旋转
+	</div>
+
+	<div class="d4">
+		倾斜
+	</div>
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>响应式布局</title>
+	<style type="text/css">
+		*{
+			margin:0;
+			padding: 0;
+		}
+		html,body{
+			width: 100%;
+			height: 100%;
+		}	
+		header{
+			display: flex;
+			justify-content: space-between;
+			flex-wrap: wrap;
+		}
+		@media screen and (min-width: 768px){
+			.left,.right{
+				width: 49%;
+			}
+		}
+		@media screen and (max-width: 768px){		
+			.left,.right{
+				width:100%;
+			}
+		}
+		.right{
+			display: flex;
+			justify-content: space-between;
+		}
+		.right div{
+			width: 49%;
+		}
+		section{
+			display:flex;
+			justify-content: space-around;
+			flex-wrap: wrap;
+		}
+	
+		@media screen and (min-width: 1024px){
+			section div{
+				width: 23%;
+			}
+		}
+		
+		@media screen and (max-width: 1024px) and (min-width: 768px){	
+			section div{
+				width: 31%;
+			}
+		}
+		@media screen and (max-width: 768px) and (min-width: 450px){
+			section div{
+				width: 48%;
+			}
+		}
+		@media screen and (max-width: 450px){
+			section div{
+				width: 90%;
+			}
+		}
+		@media screen and (orientation: landscape){
+			.left,.right{
+				width:100%;
+			}
+			section div{
+				width: 48%;
+			}
+		}
+
+		img{
+			width: 100%;
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<header>
+			<div class="left">
+				<img src="sc/响应1.png">
+			</div>
+			<div class="right">
+				<div><img src="sc/响应2.png"></div>
+				<div><img src="sc/响应3.png"></div>
+			</div>
+		</header>
+		<section>
+			<div>
+				<img src="sc/响应4.png">
+				<p>迷你微型摄影展</p>
+				<p>2016-12-12 作者：tom</p>
+			</div>
+			<div>
+				<img src="sc/响应4.png">
+				<p>迷你微型摄影展</p>
+				<p>2016-12-12 作者：tom</p>
+			</div>
+			<div>
+				<img src="sc/响应4.png">
+				<p>迷你微型摄影展</p>
+				<p>2016-12-12 作者：tom</p>
+			</div>
+			<div>
+				<img src="sc/响应4.png">
+				<p>迷你微型摄影展</p>
+				<p>2016-12-12 作者：tom</p>
+			</div>
+			<div>
+				<img src="sc/响应4.png">
+				<p>迷你微型摄影展</p>
+				<p>2016-12-12 作者：tom</p>
+			</div>
+			<div>
+				<img src="sc/响应4.png">
+				<p>迷你微型摄影展</p>
+				<p>2016-12-12 作者：tom</p>
+			</div>
+			<div>
+				<img src="sc/响应4.png">
+				<p>迷你微型摄影展</p>
+				<p>2016-12-12 作者：tom</p>
+			</div>
+			<div>
+				<img src="sc/响应4.png">
+				<p>迷你微型摄影展</p>
+				<p>2016-12-12 作者：tom</p>
+			</div>
+			<div>
+				<img src="sc/响应4.png">
+				<p>迷你微型摄影展</p>
+				<p>2016-12-12 作者：tom</p>
+			</div>
+		</section>
+	</div>
+</body>
+</html>

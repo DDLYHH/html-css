@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>新增表单</title>
+</head>
+<body>
+	<form action="">
+		<!-- 邮箱<input type="email" name="e"><br> -->
+		url地址(完整地址)<input type="url"><br>
+		颜色选择器<input type="color" name="c"><br>
+		电话号码<input type="tel"><br>
+		滑块效果<input type="range" name="r" min="10" max="30" 
+		value="10" step="2"><br>
+		数字类型<input type="number" max="10" min="2"><br>
+		搜索<input type="search"><br>
+
+		<hr style="border: 2px dotted green;">
+
+		日期选择<input type="date" name=""><br>
+		月份选择<input type="month" name=""><br>
+		周数选择<input type="week" name="">
+		<input type="datetime-local" ><br>
+		时间类型<input type="time"><br>
+		<input type="submit">
+	</form>
+
+	<hr style="border: 2px dotted green;">
+	<h3>选项列表(数据列表)</h3>
+	<input type="text" list="mylist">
+	<datalist id="mylist">
+		<option value="手机"></option>
+		<option value="手镯"></option>
+		<option value="手链"></option>
+		<option value="手表"></option>
+	</datalist>	
+
+	<hr style="border: 2px dotted green;">
+	<form action="">
+		用户名：<input type="text" name="t" autofocus=""><br>
+		邮箱：<input type="email" name="e"><br>
+
+		<input pattern="[0-9][A-Z]{3}"  placeholder="输入内容：一个数与三个大写字母" ><br>
+		<input type="submit" name="">
+
+
+	</form>
+
+</body>
+</html>
